@@ -33,7 +33,7 @@ class ViewModelTest {
         on { loadProfilesAsync() } doReturn GlobalScope.async { arrayListOf(Profile("profile_id")) }
         on { loadHealthPromptsAsync("profile_id") } doReturn GlobalScope.async {
             arrayListOf(
-                HealthPrompt("", "messae", "", true, null, null)
+                HealthPrompt("0", "message", "", true, null, null)
             )
         }
         on { loadTimelineEventsAsync("profile_id") } doReturn GlobalScope.async {
@@ -64,7 +64,7 @@ class ViewModelTest {
         DateModel("15.04.2001") as ITimeLineRecyclerItem,
         TimelineModel("5", "15.04.2001", "", "", "", "") as ITimeLineRecyclerItem
     )
-    private val expectedHealthPrompt = HealthPrompt("", "messae", "", true, null, null)
+    private val expectedHealthPrompt = HealthPrompt("0", "message", "", true, null, null)
 
 
     @Before
