@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ottonova</string>
+    <string name="description">Description:</string>
+    <string name="title">Title:</string>
+    <string name="category">Category:</string>
+    <string name="events">Events</string>
+</resources>

@@ -1,0 +1,2 @@
+rootProject.name='ottonova'
+include ':app'
